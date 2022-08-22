@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    background: #1D1E28;
+    background-image: url(./images/bg-stars.svg), url(./images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left 50%, bottom left 88%;
+    background-size: 90rem 35.563rem, 971px 178px;
+    padding: 1.25rem;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-text {
+    margin-top: 4.25rem;
+    /* margin-bottom: 4rem; */
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 6.13636px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.number-count {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 71px;
+    letter-spacing: -1.08px;
+    color: #FB5E84;
+}
+
+.count-box {
+    width: 4.375rem;
+    height: 4.375rem;
+    background: #343650;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    -webkit-box-shadow: 0px 7px 2px 0px rgba(0,0,0,0.86); 
+    box-shadow: 0px 7px 2px 0px rgba(0,0,0,0.86);
+}
+
+.count-box::before {
+    content: " ";
+    margin-left: -2.5px;
+    width: 8px;
+    height: 8px;
+    background: #191A23;
+    border-radius: 50%;
+}
+
+.count-box::after {
+    content: " ";
+    margin-right: -2.5px;
+    width: 8px;
+    height: 8px;
+    background: #191A23;
+    border-radius: 50%;
+}
+
+.center {
+    width: 100%;
+    height: 0.029rem;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1000;
+}
+
+.footer-text {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 2.95937px;
+    color: #8385A9;
+}
+
+
+.footer-bottom {
+    display: flex;
+    /* width: 83%; */
+    text-align: center;
+    justify-content: center;
+}
+
+.icons-container {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1440px) {
+    body {
+        display: flex;
+        height: 100vh;
+        /* text-align: center; */
+        background: #1D1E28;
+        background-image: url(./images/bg-stars.svg), url(./images/pattern-hills.svg);
+        background-repeat: no-repeat;
+        background-position: bottom left 50%, bottom -6% left 88%;
+        background-size: 90rem 35.563rem, 100% 178px;
+        padding: 1.25rem;
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-text {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    .main-container {
+        width: 60%;
+    }
+
+    .count-box {
+        width: 9.25rem;
+        height: 9.25rem;
+    }
+
+    .number-count {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 71px;
+        text-align: center;
+        letter-spacing: -2.4px;
+        color: #FB5E84;
+    }
+
+    .footer-text {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 5.91875px;
+        color: #8385A9;
+    }
+
+    .footer-bottom {
+        display: flex;
+        width: 49%;
+        text-align: center;
+        justify-content: center;
+    }
+}
