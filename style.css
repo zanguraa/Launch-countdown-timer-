@@ -11,6 +11,11 @@ body {
     margin: 0;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 20rem;
 }
 
 .main-text {
@@ -25,6 +30,14 @@ body {
     letter-spacing: 6.13636px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: width 0.3s ease-out;
+
+}
+
+.main-container {
+    width: 21rem;
+    transition: width 0.3s ease-out;
+
 }
 
 ul {
@@ -50,6 +63,8 @@ li {
     line-height: 71px;
     letter-spacing: -1.08px;
     color: #FB5E84;
+    transition: width 0.3s ease-out;
+
 }
 
 .count-box {
@@ -108,7 +123,7 @@ li {
 
 .footer-bottom {
     display: flex;
-    /* width: 83%; */
+    width: 21rem;
     text-align: center;
     justify-content: center;
 }
@@ -120,7 +135,102 @@ li {
     justify-content: space-between;
 }
 
-@media screen and (min-device-width: 1000px) and (max-device-width: 1440px) {
+ @media screen and (min-width: 500px) {
+
+header {
+        width: 21rem;
+    }
+.main-container {
+    width: 25rem;
+  }
+
+.count-box {
+    width: 5.375rem;
+    height: 5.375rem;
+  }
+
+  .number-count {  
+    font-size: 40px;
+  }
+
+} 
+
+@media screen and (min-width: 600px) {
+
+header {
+        width: 30rem;
+    }
+
+    .main-text {
+        margin-top: 4.25rem;
+        /* margin-bottom: 4rem; */
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 3rem;
+        /* line-height: 24px; */
+        text-align: center;
+        letter-spacing: 6.13636px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+.main-container {
+    width: 30rem;
+  }
+
+  .count-box {
+    width: 6.375rem;
+    height: 6.375rem;
+  }
+
+  .number-count {  
+    font-size: 50px;
+  }
+
+} 
+
+@media screen and (min-width: 700px) {
+
+    
+    
+    .main-container {
+        width: 35rem;
+      }
+    
+      .count-box {
+        width: 7.375rem;
+        height: 7.375rem;
+      }
+    
+      .number-count {  
+        font-size: 55px;
+      }
+    
+    } 
+
+    @media screen and (min-width: 900px) {
+
+       
+         
+        
+        .main-container {
+            width: 45rem;
+          }
+        
+          .count-box {
+            width: 9.375rem;
+            height: 9.375rem;
+          }
+        
+          .number-count {  
+            font-size: 55px;
+          }
+        
+        } 
+
+@media screen and (min-width: 1000px) {
     body {
         display: flex;
         height: 100vh;
@@ -139,20 +249,22 @@ li {
     }
 
     .main-text {
+        margin-top: 4.25rem;
+        /* margin-bottom: 4rem; */
         font-family: 'Red Hat Text';
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 29px;
+        font-size: 36px;
+        line-height: 3rem;
+        /* line-height: 24px; */
         text-align: center;
-        letter-spacing: 7.5px;
+        letter-spacing: 6.13636px;
         text-transform: uppercase;
-
         color: #FFFFFF;
     }
 
     .main-container {
-        width: 60%;
+        width: 50rem;
     }
 
     .count-box {
