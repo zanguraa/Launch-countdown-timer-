@@ -301,3 +301,40 @@ header {
         justify-content: center;
     }
 }
+
+@media screen and (min-width: 1600px) { 
+
+
+    header {
+        width: 60rem;
+    }
+
+    .main-text {
+        margin-top: 8.25rem;
+        /* margin-bottom: 4rem; */
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 5rem;
+        /* line-height: 24px; */
+        text-align: center;
+        letter-spacing: 6.13636px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .main-container {
+        width: 60rem;
+      }
+    
+      .count-box {
+        width: 12.375rem;
+        height: 12.375rem;
+      }
+    
+      .number-count {  
+        font-size: 90px;
+      }
+    
+    } 
